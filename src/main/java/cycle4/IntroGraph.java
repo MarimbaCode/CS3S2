@@ -1,12 +1,9 @@
 package cycle4;
 
-import util.Graph;
-import util.GraphNode;
-import util.GraphNodeFactory;
+import com.marimbacode.graph.Graph;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class IntroGraph extends Graph<String> {
@@ -30,15 +27,15 @@ public class IntroGraph extends Graph<String> {
     }
     
     public int V() {
-        return getVertecies();
+        return getVertexCount();
     }
     
     public int E() {
-        return 0;
+        return getEdgeCount();
     }
     
     public Iterable<String> verticies(){
-        return nodes.keySet();
+        return getVertices();
     }
     
     public Iterable<String> adjacentTo(String v){
@@ -46,15 +43,15 @@ public class IntroGraph extends Graph<String> {
     }
     
     public int degree(String id){
-        return nodes.get(id).adjacency.size();
+        return getNode(id).adjacency.size();
     }
     
     public boolean hasVertex(String id){
-        return nodes.get(id) != null;
+        return getNode(id) != null;
     }
     
     public boolean hasEdge(String id1, String id2){
-        return nodes.get(id1).adjacency.containsKey(id2);
+        return getNode(id1).adjacency.containsKey(id2);
     }
     
 }

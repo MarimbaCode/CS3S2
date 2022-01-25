@@ -1,6 +1,5 @@
 package cycle4;
 
-import util.GraphNodeFactory;
 import util.SortedGraphNodeFactory;
 
 import java.io.File;

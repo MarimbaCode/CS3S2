@@ -1,6 +1,6 @@
 package cycle4;
 
-import util.GraphNode;
+import com.marimbacode.graph.GraphNode;
 
 import java.util.TreeMap;
 

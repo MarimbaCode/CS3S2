@@ -1,6 +1,7 @@
 package util;
 
 import cycle4.SortedGraphNode;
+import com.marimbacode.graph.*;
 
 public class SortedGraphNodeFactory<A> implements GraphNodeFactory<A>{
     
