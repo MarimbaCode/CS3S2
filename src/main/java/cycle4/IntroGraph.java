@@ -1,6 +1,7 @@
 package cycle4;
 
-import com.marimbacode.graph.Graph;
+
+import com.marimbacode.simplegraphs.graphs.Graph;
 
 import java.io.File;
 import java.io.FileNotFoundException;

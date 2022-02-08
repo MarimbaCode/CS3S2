@@ -1,7 +1,7 @@
 package util;
 
 import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -28,7 +28,7 @@ public abstract class IOMatchTest {
             String actual = t.getOutput();
 
             assertEquals(sb.toString().trim(), actual.trim());
-        }catch (FileNotFoundException e){
+        }catch (IOException e){
             e.printStackTrace();
             fail();
         }

@@ -1,6 +1,7 @@
 package util;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public abstract class Testable {
 
@@ -33,7 +34,7 @@ public abstract class Testable {
         System.out.print(out);
     }
 
-    public abstract void test() throws FileNotFoundException;
+    public abstract void test() throws IOException;
     public String getOutput(){
         return output.toString();
     }
